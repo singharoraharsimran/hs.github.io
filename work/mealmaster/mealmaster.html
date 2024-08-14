@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealMaster CRM - UI UX Case Study - Harsimran Singh Arora</title>
+    <link rel="stylesheet" href="/work/assets/lightbox/lightbox.css">
+    <link href="/work/mealmaster/mealmaster-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/master-style.css" />
+    
+    <link rel="icon" href="/assets/images/h-logo.png" />
+
+    <!-- JavaScript to dynamically include header and footer -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Load header
+            fetch("/parts/header/header.html")
+                .then((response) => response.text())
+                .then((data) => (document.getElementById("header").innerHTML = data));
+
+            // Load footer
+            fetch("/parts/footer/footer.html")
+                .then((response) => response.text())
+                .then((data) => (document.getElementById("footer").innerHTML = data));
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Placeholder for header content -->
+        <div id="header"></div>
+
+        <img src="/work/mealmaster/assets/images/mockup-img.webp" alt="mockup" class="mockup-img" />
+
+        <h2 class="overview">Overview</h2>
+        <p>
+            MealMaster CRM is a responsive web app, to revolutionize tiffin service
+            management by addressing challenges like manual record-keeping and lack
+            of tracking and analytics tools. MealMaster CRM aims to streamline
+            customer data organization, enhance delivery tracking, and provide
+            valuable business insights.
+        </p>
+
+        <div class="overview-info">
+            <section class="Team">
+                <h3>Team</h3>
+                <p>3 Designers</p>
+            </section>
+
+            <section class="duration">
+                <h3>Duration</h3>
+                <p>12 Weeks</p>
+            </section>
+
+            <section class="duration">
+                <h3>My Role</h3>
+                <p>UX Researcher, Product Designer</p>
+            </section>
+        </div>
+
+        <section class="problems">
+            <h2>Problems</h2>
+            <ol>
+                <li>Manual record-keeping hinders organization and growth.</li>
+                <li>No tracking system for monitoring deliveries.</li>
+                <li>Lack of analytics tools to track customer trends.</li>
+                <li>
+                    Difficult to manage cancellations, new subscriptions, and dietary
+                    preferences.
+                </li>
+            </ol>
+        </section>
+
+        <section class="solution">
+            <h2>Solution</h2>
+            <p>
+                MealMasterCRM is a responsive web app designed to streamline
+                record-keeping, enable efficient delivery tracking, and provide
+                valuable analytics tools for tiffin service owners. Our extensive
+                research ensures it meets all user needs, enhancing operational
+                efficiency and offering insights for better decision-making.
+            </p>
+        </section>
+
+        <section class="design-process">
+            <h2>Design Process</h2>
+            <div class="design-process-cols">
+                <img src="/work/mealmaster/assets/images/design-process-img-1.webp" alt=""
+                    class="design-process-img-1" />
+                <img src="/work/mealmaster/assets/images/design-process-img-2.webp" alt=""
+                    class="design-process-img-2" />
+                <img src="/work/mealmaster/assets/images/design-process-img-3.webp" alt=""
+                    class="design-process-img-3" />
+            </div>
+        </section>
+
+        <h2>UX Research</h2>
+
+        <!-- ------------USER SURVEY----------------- -->
+
+        <section class="user-survey">
+            <h3>User Survey</h3>
+            <p>
+                We conducted a user survey to gather insights on current challenges
+                and preferences.
+                <br />
+                Here are the top findings:
+            </p>
+        </section>
+
+        <div class="user-survey-cols">
+            <section class="digital-platform-preference">
+                <img src="/work/mealmaster/assets/images/digital-platform-preference-img.webp" alt=""
+                    class="digital-platform-preference-img" />
+                <h3>Digital Platform Preference</h3>
+                <p>
+                    Users prefer a digital solution over manual record-keeping for
+                    managing tiffin services.
+                </p>
+            </section>
+
+            <section class="need-for-delivery-tracking">
+                <img src="/work/mealmaster/assets/images/need-for-delivery-tracking-img.webp" alt=""
+                    class="need-for-delivery-tracking-img" />
+                <h3>Need for Delivery Tracking</h3>
+                <p>
+                    Users find it difficult to monitor deliveries without a dedicated
+                    tracking system.
+                </p>
+            </section>
+
+            <section class="need-for-analytics-dashboard">
+                <img src="/work/mealmaster/assets/images/need-for-analytics-dashboard-img.webp" alt=""
+                    class="need-for-analytics-dashboard-img" />
+                <h3>Need for Analytics Dashboard</h3>
+                <p>
+                    Users expressed the need for analytics to better understand customer
+                    trends.
+                </p>
+            </section>
+        </div>
+
+        <!-- ------------USER INTERVIEWS----------------- -->
+
+        <section class="user-interviews">
+            <h3>User Interviews</h3>
+            <p>
+                We conducted user interviews to gain a deep understanding of our
+                audience and gather insights that helped us develop a product that
+                effectively addressed their needs and challenges.
+                <br />
+                Here are some of the most important questions with the answers that we
+                gathered.
+            </p>
+        </section>
+
+        <div class="questions">
+            <section class="question-1">
+                <p class="question">
+                    How do you currently manage your tiffin service operations,
+                    including customer subscriptions, payments, and customer data?
+                </p>
+                <p class="answer">
+                    “I currently manage everything manually using Excel. It's
+                    time-consuming to track customer subscriptions, payments, and
+                    changes in customer numbers.”
+                </p>
+            </section>
+
+            <section class="question-2">
+                <p class="question">
+                    What challenges do you face in keeping track of customer gains,
+                    losses, and active subscriptions?
+                </p>
+                <p class="answer">
+                    “Managing customer gains and losses is challenging, especially
+                    because I've seen a significant increase in customers recently.
+                    Keeping track of active subscriptions and ensuring timely deliveries
+                    is a struggle!”
+                </p>
+            </section>
+
+            <section class="question-3">
+                <p class="question">
+                    What are the main difficulties you encounter in managing and
+                    tracking tiffin deliveries from preparation to customer receipt?
+                </p>
+                <p class="answer">
+                    “Tracking tiffin deliveries is difficult because it's all manual.
+                    There's no synchronized system for managing orders from preparation
+                    to delivery, which leads to confusion and occasional delays.”
+                </p>
+            </section>
+
+            <section class="question-4">
+                <p class="question">
+                    How do you currently handle the process of sharing offers or updates
+                    about your tiffin service on social media platforms like Instagram,
+                    Facebook, or WhatsApp?
+                </p>
+                <p class="answer">
+                    "I use Instagram and Facebook to share our tiffin service offers.
+                    It's a hassle because I have to post the same information twice on
+                    both platforms, and sometimes also share updates through WhatsApp to
+                    reach more customers."
+                </p>
+            </section>
+        </div>
+
+        <!-- ------------Competitive Analysis----------------- -->
+
+        <section class="competitive-analysis">
+            <h3>Competitive Analysis</h3>
+            <p>
+                Since we had no direct competitors, we analyzed other CRM systems to
+                identify strengths and weaknesses. This revealed a significant market
+                opportunity for us to differentiate and improve our offering.
+            </p>
+            <img src="/work/mealmaster/assets/images/competitive-analysis-table-img.webp"
+                class="competitive-analysis-table-img" />
+        </section>
+
+        <!-- ------------USER PERSONA----------------- -->
+
+        <section class="user-persona">
+            <h3>User Persona & User Stories</h3>
+            <section class="user-persona-img">
+                <img src="/work/mealmaster/assets/images/amita-persona-img.webp" alt="" class="amita-persona-img" />
+                <img src="/work/mealmaster/assets/images/alex-persona-img.webp" alt="" class="alex-persona-img" />
+            </section>
+        </section>
+
+        <!-- ------------UX DESIGN----------------- -->
+
+        <h2>UX Design</h2>
+
+        <!-- ------------USER FLOW----------------- -->
+
+        <section class="user-flow">
+            <h3>User Flow</h3>
+            <p>
+                We decided to develop a user flow to clearly outline the steps users
+                would take to navigate through the app, ensuring an intuitive and
+                efficient experience.
+            </p>
+            <img src="/work/mealmaster/assets/images/user-flow-img.webp" class="user-flow-img" alt="" />
+        </section>
+
+        <!-- ------------WIREFRAMES---------------- -->
+
+        <section class="wireframes">
+            <h3>Wireframes</h3>
+            <p>
+                We decided to create wireframes to visually map out the app's
+                structure, layout, and user navigation flow.
+            </p>
+            <div class="wireframe-gallery">
+                <a href="/work/mealmaster/assets/images/wireframes/add-new-customer.webp" data-lightbox="Wireframes"
+                    data-title="Add New Customer">
+                    <img src="/work/mealmaster/assets/images/wireframes/add-new-customer.webp" alt="Add New Customer"
+                        class="wireframe-img wireframe-img-1" />
+                </a>
+                <a href="/work/mealmaster/assets/images/wireframes/add-new-driver.webp" data-lightbox="Wireframes"
+                    data-title="Add New Driver">
+                    <img src="/work/mealmaster/assets/images/wireframes/add-new-driver.webp" alt="Add New Driver"
+                        class="wireframe-img wireframe-img-2" />
+                </a>
+            
+                <a href="/work/mealmaster/assets/images/wireframes/meal-settings.webp" data-lightbox="Wireframes"
+                    data-title="Meal Settings">
+                    <img src="/work/mealmaster/assets/images/wireframes/meal-settings.webp" alt="Meal Settings"
+                        class="wireframe-img wireframe-img-3" />
+                </a>
+            
+                <a href="/work/mealmaster/assets/images/wireframes/schedule-deliveries.webp" data-lightbox="Wireframes"
+                    data-title="Schedule Deliveries">
+                    <img src="/work/mealmaster/assets/images/wireframes/schedule-deliveries.webp" alt="Schedule Deliveries"
+                        class="wireframe-img wireframe-img-4" />
+                </a>
+            
+                <a href="/work/mealmaster/assets/images/wireframes/social-media-sharing.webp" data-lightbox="Wireframes"
+                    data-title="Social Media Sharing">
+                    <img src="/work/mealmaster/assets/images/wireframes/social-media-sharing.webp" alt="Social Media Sharing"
+                        class="wireframe-img wireframe-img-5" />
+                </a>
+
+            </div>
+            
+        </section>
+
+        <!-- ------------USABILITY TESTING---------------- -->
+
+        <section class="usability-testing">
+            <h3>Usability Testing</h3>
+            <p>
+                We conducted usability testing to identify any issues users might face
+                while interacting with the app, allowing us to refine and improve the
+                user experience based on real-world feedback.
+            </p>
+            <img src="/work/mealmaster/assets/images/usability-testing-img.webp" class="usability-testing-img" alt="" />
+        </section>
+
+        <div class="usability-testing-finding">
+            <h3>Usability Testing Finding 1</h3>
+            <p>Users suggested that there could be a field to add a dietary preference for customer.</p>
+            <img src="./assets/images/usability-testing-finding-1-img.webp" alt="">
+        </div>
+
+        <div class="usability-testing-finding">
+            <h3>Usability Testing Finding 2</h3>
+            <p>Lack of clear account username caused confusion.</p>
+            <img src="./assets/images/usability-testing-finding-2-img.webp" alt="">
+        </div>
+
+        <!-- ------------UI KIT---------------- -->
+
+        <!-- ------------UI KIT----------------- -->
+        
+        <section class="ui-kit">
+            <h3>UI Kit</h3>
+            <p>We created a comprehensive UI Kit, ensuring consistency and visual coherence across all screens of the app.</p>
+            <img src="./assets/images/ui-kit.webp" class="ui-kit-img" alt="">
+        </section>
+
+        <!-- ------------UI MOCKUPS----------------- -->
+
+        <section class="ui-mockups">
+            <h3>UI Mockups</h3>
+            <p>Detailed mockups of the app's user interface were created to visualize the final design and layout.</p>
+            <img src="assets/images/ui-mockup-1.webp" class="ui-mockup-img-1" alt="">
+            <img src="assets/images/ui-mockup-2.webp" class="ui-mockup-img-2" alt="">
+        </section>
+
+        <!-- ------------PROTOTYPE----------------- -->
+        
+        <section class="prototype">
+            <h3>Prototype</h3>
+            <p>Our interactive prototype allows users to experience the app's functionality and flow before the final development phase.</p>
+            <img src="assets/images/prototype.webp" class="prototype-img" alt="">
+        </section>
+ <!-- ------------Learnings and Takeaways---------------- -->
+ <section class="learnings-and-takeaways">
+    <h2>Learnings and Takeaways</h2>
+
+    <section class="learning-1">
+        <h4>Understanding User Needs is Crucial</h4>
+        <p>Conducting user research through surveys, interviews, and competitor analysis was vital to uncovering the pain points of tiffin service providers. This research helped us identify the core functionalities required in MealMaster CRM - efficient customer data management, delivery tracking, and valuable business insights. By focusing on user needs, we ensured the product addressed their challenges and streamlined their operations.</p>
+    </section>
+
+    <section class="learning-2">
+        <h4>Empathy Leads to Better Design</h4>
+        <p>Putting ourselves in the shoes of tiffin service providers and delivery personnel enabled us to design a product that genuinely addresses their pain points. This empathy-driven approach ensures that our solutions are user-centric, fostering greater user satisfaction and product adoption.</p>
+    </section>
+
+    <section class="learning-3">
+        <h4>Iterative Design Leads to Better Products</h4>
+        <p>The iterative design process, encompassing user flow development, wireframing, usability testing, and UI design, allowed for continuous improvement. Usability testing provided valuable insights that helped us refine the user experience and address potential issues before launch. This iterative approach ensured the final product was not only functional but also intuitive and user-friendly for tiffin service providers.</p>
+    </section>
+
+    <section class="learning-4">
+        <h4>The Importance of User Personas</h4>
+        <p>Developing user personas like Amita (the chef) and Alex (the delivery driver) helped us understand the user base better. By empathizing with their frustrations and goals, we could design features that catered to their specific needs. Amita's persona highlighted the need for customer data organization and sales analytics, while Alex's persona emphasized the importance of delivery tracking and route optimization.</p>
+    </section>
+
+    <section class="learning-5">
+        <h4>Usability Testing Uncovers Hidden Issues</h4>
+        <p>Usability testing played a critical role in identifying potential roadblocks that users might encounter while interacting with the app. Findings like the need for a dietary preference field and a clear username display demonstrate the value of user testing. By addressing these issues early on, we ensured a smoother and more intuitive user experience for tiffin service providers using MealMaster CRM.</p>
+    </section>
+    
+    
+    
+
+</section>
+        <!-- Placeholder for footer content -->
+        <div id="footer"></div>
+    </div>
+    <script src="/work/assets/lightbox/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>

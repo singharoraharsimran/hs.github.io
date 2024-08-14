@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="/home/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/master-style.css">
+  <link rel="icon" href="/assets/images/h-logo.png">
+  
+  <!-- JavaScript to dynamically include header and footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Load header
+        fetch('/parts/header/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load footer
+        fetch('/parts/footer/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Placeholder for header content -->
+    <div id="header"></div>
+   
+    <main>
+      <div class="hero-section">
+        <section class="introduction">
+          <h2 class="name">I am Harsimran, a Product Designer. I enjoy creating user-centric, delightful, and human experiences.</h2>
+          <h2 class="company">Previously at 
+            <a href="https://www.samsungsds.com/en/index.html">Samsung</a>
+            and
+            <a href="https://www.accenture.com/in-en">Accenture</a>
+          </h2>
+        </section>
+        <section>
+          <img src="/home/assets/images/Heroimg.png" alt="Harsimran" class="heroimg">
+        </section>
+      </div>
+      <section class="work" id="work">
+        <img src="/home/assets/images/PhysioSync.png" alt="PhysioSync Project" class="physiosync-card">
+        <a href="/work/mealmaster/mealmaster.html"><img src="/home/assets/images/MealMaster.png" alt="MealMaster Project" class="mealmaster-card"></a>
+        <img src="/home/assets/images/Generocity.png" alt="Generocity Project" class="generocity-card">
+        <img src="/home/assets/images/Accenture.png" alt="Accenture Project" class="accenture-card"> 
+      </section>
+    </main>
+    
+    <!-- Placeholder for footer content -->
+    <div id="footer"></div>
+  </div> <!-- Closing the container div -->
+
+</body>
+
+</html>
