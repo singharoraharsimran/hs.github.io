@@ -1,0 +1,82 @@
+/* ----------------Hero Section------------------- */
+
+.name {
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+    font-family: 'FuturaCyrillicBook', sans-serif;
+  }
+  
+  .company {
+    font-family: 'FuturaCyrillicBook', sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+  }
+  
+  .hero-section {
+    width: 100%;
+  }
+  
+  .heroimg {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 64px;
+  }
+  
+  /* ----------------Work------------------- */
+  .physiosync-card, .accenture-card, .generocity-card, .mealmaster-card {
+    height: auto;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  
+  
+  /* ----------------Desktop------------------ */
+  @media only screen and (min-width: 800px) {
+    /* Name and Company adjustments for desktop */
+    .name {
+      font-weight: 400;
+      font-size: 40px;
+      font-style: normal;
+      font-family: 'FuturaCyrillicBook', sans-serif;
+    }
+  
+    .company {
+      font-family: 'FuturaCyrillicBook', sans-serif;
+      font-size: 40px;
+      font-weight: 200;
+    }
+  
+    /* Hero Section  */
+    .hero-section {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 70% 30%;
+      align-items: center;
+    }
+  
+    .heroimg {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+  
+    /* Work section grid for desktop */
+    .work {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: auto;
+      row-gap: 2rem;
+      column-gap: 2rem;
+    }
+  
+    .physiosync-card, .accenture-card, .generocity-card, .mealmaster-card {
+      height: auto;
+      width: 100%;
+    }
+  }
+  

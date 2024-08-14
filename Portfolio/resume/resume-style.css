@@ -1,0 +1,25 @@
+:root {
+    --color3: #CF6CC9;
+    --color4: #EE609C;
+    --Gradient1: linear-gradient(90deg, var(--color3) 33%, var(--color4) 66%, var(--color4) 100%);
+  }
+  
+  /* ----------------Unique Styles------------------- */
+  
+  .download-resume-container {
+    margin: 24px 0px;
+  }
+  
+  .download-resume-button {
+    text-decoration: none;
+    color: white;
+    padding: 16px 24px;
+    background: var(--Gradient1);
+    border-radius: 12px;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (min-width: 800px) {
+    /* Unique resume container styles if needed */
+  }
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Harsimran Singh Arora</title>
+
+    <link rel="stylesheet" href="/css/master-style.css">
+    <link href="/resume/resume-style.css" rel="stylesheet">
+
+    <link rel="icon" href="/assets/images/h-logo.png">
+  
+  <!-- JavaScript to dynamically include header and footer -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Load header
+        fetch('/parts/header/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load footer
+        fetch('/parts/footer/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    });
+  </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Placeholder for header content -->
+        <div id="header"></div>
+
+
+    <!-- Download Link
+    <div class="download-resume-container">
+        <a href="Assets/resume.pdf" 
+            download="Harsimran Singh Arora - Product Designer Resume.pdf"
+            class="download-resume-button">Download My Resume </a>
+    </div> -->
+
+    
+    <div class="resume-container">
+        <!-- Embedding the PDF -->
+        <object data="/resume/assets/Harsimran Singh Arora - UX Design.pdf" type="application/pdf" width="100%" height="600px">
+            <p>Your browser does not support PDFs. 
+               <a href="/resume/assets/Harsimran Singh Arora - UX Design.pdf" download="Harsimran Singh Arora - Product Designer Resume.pdf">Download the PDF</a> instead.</p>
+        </object>
+
+        
+    </div>
+    <div id="footer"></div>
+    </div>
+    
+</body>
+</html>

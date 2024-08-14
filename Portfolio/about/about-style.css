@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'FuturaCyrillicMedium';
+    src: url('Fonts/FuturaCyrillicMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaCyrillicBook';
+    src: url('Fonts/FuturaCyrillicBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color3: #CF6CC9;
+    --color4: #EE609C;
+    --Gradient1: linear-gradient(90deg, var(--color3) 33%, var(--color4) 66%, var(--color4) 100%);
+}
+
+.email-link, .linkedin-link {
+    text-decoration: none;
+    background: var(--Gradient1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Ensures that the text takes the background gradient */
+}
+
+p {
+    font-family: 'urbanist', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    width: 100%;
+}
+
+.about-me, .lets-connect,.my-story{
+    padding-top: 1rem;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 800px) {
+
+    /* --------CHILDHOOD AREA------------*/
+    p {
+        font-family: 'urbanist', sans-serif;
+        line-height: 1.5;
+        font-size: 20px;
+    }
+
+    .my-story-part-1 {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+    }
+
+    .childhood-text {
+        padding-left: 1rem;
+    }
+
+    /* --------WIREFRAME AREA------------*/
+    .my-story-part-2 {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center;
+        grid-template-areas: "first second";
+    }
+
+    .harsimran-wireframing-text {
+        grid-area: first;
+        padding-right: 1rem;
+    }
+}
